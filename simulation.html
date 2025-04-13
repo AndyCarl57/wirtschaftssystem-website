@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wirtschaftliche Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Marktwirtschaft ohne Kapitalismus</h1>
+            <p class="subtitle">Wirtschaftliche Simulation</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="#methodik">Methodik</a></li>
+                    <li><a href="#ergebnisse">Ergebnisse</a></li>
+                    <li><a href="#vergleich">Szenarienvergleich</a></li>
+                    <li><a href="#code">Simulationscode</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="methodik" class="hero">
+        <div class="container">
+            <h2>Agentenbasierte Wirtschaftssimulation</h2>
+            <p>Um die Wirkungsweise des integrierten Systems zu untersuchen, wurde eine agentenbasierte Simulation entwickelt, die verschiedene Szenarien vergleicht: das Basisszenario (gegenwärtiges System), die Einzelbausteine und ihre Kombinationen.</p>
+        </div>
+    </section>
+
+    <section id="simulationsmodell">
+        <div class="container">
+            <h2>Das Simulationsmodell</h2>
+            
+            <div class="feature-box">
+                <h3>Methodologie</h3>
+                <p>Die Simulation modelliert eine Wirtschaft mit 1.000 Haushalten und 100 Unternehmen über einen Zeitraum von 120 Monaten (10 Jahre). Die Haushalte unterscheiden sich in Einkommen, Vermögen, Konsumneigung und anderen Eigenschaften. Die Unternehmen variieren in Größe, Kapital und Produktivität.</p>
+            </div>
+            
+            <h3>Implementierung der drei Bausteine</h3>
+            <div class="columns">
+                <div class="column">
+                    <h4>Freiwirtschaft</h4>
+                    <p>Umlaufsicherung von 5% pro Jahr auf Geldvermögen und Bodenreform durch Abschöpfung von Bodenwertsteigerungen</p>
+                </div>
+                <div class="column">
+                    <h4>MMT</h4>
+                    <p>Staatliche Geldschöpfung für öffentliche Ausgaben und BGE, orientiert an der Kapazitätsauslastung der Wirtschaft</p>
+                </div>
+                <div class="column">
+                    <h4>BGE</h4>
+                    <p>1.200 Euro pro Monat für Erwachsene, 600 Euro für Kinder, finanziert durch Steuern und/oder MMT-basierte Geldschöpfung</p>
+                </div>
+            </div>
+            
+            <h3>Simulierte Szenarien</h3>
+            <ul>
+                <li><strong>Basisszenario:</strong> Gegenwärtiges System ohne die drei Bausteine</li>
+                <li><strong>Einzelbausteine:</strong> Jeweils nur Freiwirtschaft, nur MMT oder nur BGE</li>
+                <li><strong>Kombinationen:</strong> Freiwirtschaft + MMT, Freiwirtschaft + BGE, MMT + BGE</li>
+                <li><strong>Vollständiges System:</strong> Alle drei Bausteine kombiniert</li>
+            </ul>
+            
+            <blockquote>
+                "Die agentenbasierte Modellierung ermöglicht es, komplexe Interaktionen zwischen verschiedenen Wirtschaftsakteuren zu simulieren und emergente Phänomene zu beobachten, die in aggregierten Modellen nicht sichtbar wären."
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="ergebnisse" class="alt-bg">
+        <div class="container">
+            <h2>Simulationsergebnisse</h2>
+            
+            <div class="image-container">
+                <img src="images/simulationsergebnisse.png" alt="Simulationsergebnisse" class="full-width-image">
+                <p class="caption">Simulationsergebnisse: Wirtschaftssystem mit Freiwirtschaft, MMT und BGE über 120 Monate</p>
+            </div>
+            
+            <h3>Ergebnisse für Schlüsselindikatoren</h3>
+            <div class="cards">
+                <div class="card">
+                    <h4>BIP-Wachstum</h4>
+                    <p><strong>Basisszenario:</strong> Moderates Wachstum mit zyklischen Schwankungen<br>
+                    <strong>Kombiniertes System:</strong> Höheres und stabileres Wachstum durch stärkere Binnennachfrage und reduzierte Krisenanfälligkeit</p>
+                </div>
+                <div class="card">
+                    <h4>Einkommens- und Vermögensverteilung</h4>
+                    <p><strong>Basisszenario:</strong> Zunehmende Ungleichheit (Gini steigt von 0,78 auf 0,82)<br>
+                    <strong>Kombiniertes System:</strong> Deutliche Reduktion der Ungleichheit (Gini sinkt auf 0,42)</p>
+                </div>
+                <div class="card">
+                    <h4>Arbeitslosigkeit</h4>
+                    <p><strong>Basisszenario:</strong> Strukturelle Arbeitslosigkeit von 5-8%<br>
+                    <strong>Kombiniertes System:</strong> Reduktion auf 2-3% durch höhere Nachfrage und verbesserte Arbeitsbedingungen</p>
+                </div>
+                <div class="card">
+                    <h4>Inflation</h4>
+                    <p><strong>Basisszenario:</strong> Niedrige Inflation von 1-2%<br>
+                    <strong>Kombiniertes System:</strong> Moderate Inflation von 2-4%, kontrolliert durch antizyklische Anpassung des BGE</p>
+                </div>
+            </div>
+            
+            <div class="feature-box">
+                <h3>Postwachstumsaspekte</h3>
+                <p>Obwohl die Simulation zunächst ein höheres BIP-Wachstum im kombinierten System zeigt, ist dieses Wachstum qualitativ anders als im Basisszenario. Es ist weniger ressourcenintensiv und könnte nach einer Übergangsphase in einen stabilen Postwachstumszustand übergehen. Die Demurrage verhindert die Anhäufung großer Geldvermögen und damit den Wachstumszwang, der aus dem Zins- und Zinseszinsmechanismus resultiert.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vergleich">
+        <div class="container">
+            <h2>Vergleich der Szenarien</h2>
+            
+            <div class="image-container">
+                <img src="images/radar_vergleich.png" alt="Vergleich der Szenarien" class="full-width-image">
+                <p class="caption">Radar-Diagramm: Vergleich der verschiedenen Szenarien (normalisiert)</p>
+            </div>
+            
+            <p>Der Vergleich verschiedener Szenarien zeigt, dass die Kombination aller drei Bausteine deutlich bessere Ergebnisse liefert als jeder Baustein einzeln oder das Basisszenario:</p>
+            
+            <div class="columns">
+                <div class="column">
+                    <h4>Nur Freiwirtschaft</h4>
+                    <p>Verbesserte Geldumlaufgeschwindigkeit und reduzierte Vermögenskonzentration, aber begrenzte Wirkung auf Arbeitslosigkeit</p>
+                </div>
+                <div class="column">
+                    <h4>Nur MMT</h4>
+                    <p>Höhere öffentliche Investitionen und reduzierte Arbeitslosigkeit, aber Risiko von Inflation und Vermögenskonzentration</p>
+                </div>
+                <div class="column">
+                    <h4>Nur BGE</h4>
+                    <p>Reduzierte Armut und verbesserte soziale Mobilität, aber Finanzierungsprobleme und mögliche Inflation</p>
+                </div>
+                <div class="column">
+                    <h4>Alle drei Bausteine</h4>
+                    <p>Optimale Kombination mit stabiler Wirtschaft, geringer Ungleichheit, niedriger Arbeitslosigkeit und kontrollierter Inflation</p>
+                </div>
+            </div>
+            
+            <blockquote>
+                "Die Radar-Diagramme der Simulation zeigen eindeutig, dass das kombinierte System in allen Dimensionen (BIP, Gini-Koeffizient, Arbeitslosigkeit, Inflation, Geldumlaufgeschwindigkeit) besser abschneidet als die Einzelbausteine oder das Basisszenario."
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="code" class="alt-bg">
+        <div class="container">
+            <h2>Simulationscode</h2>
+            
+            <p>Die Simulation wurde in Python implementiert, unter Verwendung von NumPy für numerische Berechnungen, Pandas für Datenanalyse und Matplotlib/Seaborn für Visualisierungen.</p>
+            
+            <div class="feature-box">
+                <h3>Kernkomponenten des Codes</h3>
+                <ul>
+                    <li><strong>Agentenklassen:</strong> Implementierung von Haushalten, Unternehmen, Staat und Zentralbank als autonome Agenten</li>
+                    <li><strong>Wirtschaftsumgebung:</strong> Simulation des Arbeitsmarkts, Gütermarkts und Finanzmarkts</li>
+                    <li><strong>Politikinstrumente:</strong> Implementierung von Umlaufsicherung, staatlicher Geldschöpfung und BGE</li>
+                    <li><strong>Analysewerkzeuge:</strong> Berechnung und Visualisierung wirtschaftlicher Indikatoren</li>
+                </ul>
+            </div>
+            
+            <p>Der vollständige Simulationscode ist als Download verfügbar und kann für eigene Experimente und Erweiterungen genutzt werden.</p>
+            
+            <a href="downloads/wirtschafts_simulation.py" class="btn">Simulationscode herunterladen</a>
+            <a href="index.html" class="btn">Zurück zur Übersicht</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Marktwirtschaft ohne Kapitalismus | Ein Projekt zur Neuordnung des Wirtschaftssystems</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
